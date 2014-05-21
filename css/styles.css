@@ -31,7 +31,7 @@ a:hover {
 }
 .top-bar:after,
 .nav-bar:after,
-#main:after,
+#section:after,
 .news .columns:after,
 #footer .holder:after,
 .dilers:after {
@@ -130,28 +130,44 @@ a:hover {
 #main-menu .active a:after{
     display: block;
 }
+/* main */
+#main {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#main:after {
+    content: '';
+    position: absolute;
+    width: 1600px;
+    height: 25px;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -800px;
+    background: url(../images/bg-top-shadow.png) no-repeat 50% 0;
+    z-index: 5;
+}
+#main .main-holder {
+    margin: 0 auto;
+    width: 960px;
+    padding: 28px 0 0;
+}
 /* promo */
 .promo {
     width: 100%;
-    background: #c5c5c5 url(../images/bg-grey-pattern.jpg) repeat-y 50% 0;
     position: relative;
     margin: 0 0 18px;
-    overflow: hidden;
+    z-index: 1;
+    background: #c5c5c5 url(../images/bg-grey-pattern.jpg) repeat-y 50% 0;
 }
-.promo:after,
-.promo:before {
+.promo:after {
     content: '';
     position: absolute;
-    top: 0;
     left: 50%;
+    bottom: 0;
     width: 1600px;
     margin: 0 0 0 -800px;
     height: 25px;
-    background: url(../images/bg-top-shadow.png) no-repeat;
-}
-.promo:before {
-    top: auto;
-    bottom: 0;
     background: url(../images/bg-bottom-shadow.png) no-repeat;
 }
 .promo .holder {
@@ -235,8 +251,8 @@ a:hover {
     top: 0;
     left: 0;
 }
-/* main*/
-#main {
+/* section */
+#section {
     width: 960px;
     margin: 0 auto 10px;
 }
@@ -300,6 +316,72 @@ a:hover {
     background-color: #dadada;
     text-decoration: none;
 }
+/* aside */
+.aside {
+    float: left;
+    margin: 0 24px 0 0;
+    padding: 4px 0 0;
+}
+.aside .menu {
+    font-size: 12px;
+    line-height: 16px;
+}
+.aside .menu > li {
+    margin: 0 0 8px;
+}
+.aside .menu a {
+    color: #000;
+    text-decoration: none;
+}
+.aside .menu a:hover {
+    text-decoration: underline;
+}
+.aside .menu > li > a {
+    padding: 0 0 0 13px;
+    position: relative;
+    text-transform: uppercase;
+}
+.aside .menu > li.active > a {
+    font-weight: bold;
+}
+.aside .menu > li > a:hover,
+.aside .menu > li.active > a{
+    color: #66a137;
+    text-decoration: underline;
+}
+.aside .menu > li > a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #66a137;
+    display: none;
+}
+.aside .menu > li > a:hover:after,
+.aside .menu > li.active > a:after {
+    display: block;
+}
+.aside .menu ul {
+    padding: 5px 0 0 22px;
+}
+.aside .menu ul li {
+    margin: 0 0 5px;
+    padding: 0 0 0 8px;
+    position: relative;
+}
+.aside .menu ul li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 1px;
+    background: #000;
+}
 /* content */
 #content {
     overflow: hidden;
@@ -316,6 +398,14 @@ a:hover {
     margin: 0 0 10px;
 }
 .intro p {
+    margin: 0 0 10px;
+}
+#content .text {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 0 8px;
+}
+#content .text p {
     margin: 0 0 10px;
 }
 /* news */
@@ -452,6 +542,74 @@ a:hover {
     line-height: 20px;
     margin: 0 0 13px;
     color: #66a137;
+}
+/* catalog */
+.catalog {
+    width: 710px;
+    margin: 0 -6px 22px 0;
+}
+.catalog .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 234px;
+    margin: 0 0 24px;
+}
+.catalog .photo {
+    text-align: center;
+    background: url(../images/bg-bottom-shadow2.png) no-repeat 50% 100%;
+    padding: 0 0 42px;
+    vertical-align: middle;
+    display: table;
+    width: 100%;
+}
+.catalog .photo .cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.catalog .photo img {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.catalog .title {
+    margin: -2px 8px 0 2px;
+}
+.catalog .entry {
+    margin: -2px 8px 0 2px;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0 0 28px;
+    position: relative;
+}
+.catalog h2 {
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: bold;
+    padding: 0 0 11px;
+}
+.catalog h2 a {
+    text-decoration: none;
+    color: #000;
+}
+.catalog h2 a:hover {
+    text-decoration: underline;
+}
+.catalog .more {
+    position: absolute;
+    bottom: 0;
+    padding: 6px 8px;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: #66a137;
+}
+.catalog .more:hover {
+    text-decoration: none;
+}
+.catalog p {
+    margin: 0 0 13px;
 }
 /* footer */
 #footer {
