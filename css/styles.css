@@ -610,6 +610,36 @@ a:hover {
 .catalog p {
     margin: 0 0 13px;
 }
+.catalog-wide {
+	padding: 7px 0 0;
+	margin: 0;
+	width: 100%;
+}
+.catalog-wide .title {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 15px;
+	padding: 0;
+}
+.catalog-wide .item {
+	width: 317px;
+	margin: 0 0 42px;
+}
+.catalog-wide .photo {
+	background: url(../images/bg-bottom-shadow4.png) no-repeat 50% 100%;
+	padding: 0 0 54px;
+	vertical-align: middle;
+	display: table;
+	width: 100%;
+}
+.catalog-wide .entry {
+	font-size: 12px;
+	margin: 0;
+	padding: 3px 12px 40px;
+}
+.catalog-wide .more {
+	font-size: 14px;
+}
 /* product */
 .product {
     padding: 2px 0 0 9px;
