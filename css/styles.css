@@ -593,9 +593,7 @@ a:hover {
 .catalog h2 a:hover {
     text-decoration: underline;
 }
-.catalog .more {
-    position: absolute;
-    bottom: 0;
+.more {
     padding: 6px 8px;
     text-decoration: underline;
     color: #fff;
@@ -604,8 +602,12 @@ a:hover {
     text-transform: uppercase;
     background: #66a137;
 }
-.catalog .more:hover {
+.more:hover {
     text-decoration: none;
+}
+.catalog .more {
+	position: absolute;
+	bottom: 0;
 }
 .catalog p {
     margin: 0 0 13px;
@@ -801,6 +803,52 @@ a:hover {
 	font-weight: bold;
 }
 .page-content p {
+	margin: 0 0 10px;
+	font-size: 13px;
+}
+/* news feed */
+.news-feed {
+	padding: 16px 0 60px;
+}
+.news-feed .item {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px 24px 40px;
+	width: 408px;
+}
+.news-feed .date {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: #66a137;
+	margin: 0 0 10px;
+}
+.news-feed .title {
+	text-transform: uppercase;
+	margin: 0 0 9px;
+}
+.news-feed h2 {
+	font-size: 15px;
+}
+.news-feed .title a {
+	color: #000;
+	text-decoration: none;
+}
+.news-feed .title a:hover {
+	text-decoration: underline;
+}
+.news-feed .entry {
+	font-size: 13px;
+	line-height: 19px;
+	text-align: justify;
+	position: relative;
+	padding: 0 0 35px;
+}
+.news-feed .more {
+	position: absolute;
+	bottom: 0;
+}
+.news-feed p {
 	margin: 0 0 10px;
 }
 /* footer */
