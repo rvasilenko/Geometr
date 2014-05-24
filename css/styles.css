@@ -739,6 +739,53 @@ a:hover {
 .features table tr:nth-child(odd) td {
     background: #ebebeb;
 }
+/* banner */
+.banner {
+	position: relative;
+	margin: 0 0 14px;
+}
+.banner:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 1600px;
+	margin: 0 0 0 -800px;
+	height: 25px;
+	background: url(../images/bg-bottom-shadow.png) no-repeat;
+}
+/* map */
+.map {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1266px;
+}
+.map img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+.contacts {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1034px;
+	font-size: 14px;
+	line-height: 21px;
+}
+.contacts strong {
+	font-weight: bold;
+}
+.contacts p {
+	margin: 0 0 19px;
+}
+.contacts a {
+	color: #0006ff;
+	text-decoration: none;
+}
+.contacts a:hover {
+	text-decoration: underline;
+}
 /* footer */
 #footer {
     width: 100%;
