@@ -754,6 +754,10 @@ a:hover {
 	height: 25px;
 	background: url(../images/bg-bottom-shadow.png) no-repeat;
 }
+.banner img {
+	display: block;
+	margin: 0 auto;
+}
 /* map */
 .map {
 	text-align: center;
@@ -764,7 +768,6 @@ a:hover {
 .map img {
 	width: 100%;
 	height: auto;
-	vertical-align: top;
 }
 .contacts {
 	margin: 0 auto;
@@ -785,6 +788,20 @@ a:hover {
 }
 .contacts a:hover {
 	text-decoration: underline;
+}
+/* page content */
+.page-content {
+	margin: 0 auto;
+	padding: 12px 6px 20px;
+	width: 948px;
+	font-size: 14px;
+	line-height: 23px;
+}
+.page-content strong {
+	font-weight: bold;
+}
+.page-content p {
+	margin: 0 0 10px;
 }
 /* footer */
 #footer {
