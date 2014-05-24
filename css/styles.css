@@ -482,7 +482,7 @@ a:hover {
 .news .post p {
     margin: 0 0 3px;
 }
-.news .post .more {
+.news .post .button {
     color: #5a8d30;
     font-weight: bold;
 }
@@ -593,19 +593,18 @@ a:hover {
 .catalog h2 a:hover {
     text-decoration: underline;
 }
-.more {
+.button {
     padding: 6px 8px;
     text-decoration: underline;
     color: #fff;
     font-size: 12px;
     line-height: 16px;
-    text-transform: uppercase;
     background: #66a137;
 }
-.more:hover {
+.button:hover {
     text-decoration: none;
 }
-.catalog .more {
+.catalog .button {
 	position: absolute;
 	bottom: 0;
 }
@@ -639,7 +638,7 @@ a:hover {
 	margin: 0;
 	padding: 3px 12px 40px;
 }
-.catalog-wide .more {
+.catalog-wide .button {
 	font-size: 14px;
 }
 /* product */
@@ -810,12 +809,16 @@ a:hover {
 .news-feed {
 	padding: 16px 0 60px;
 }
+.news-inner {
+	padding: 8px 11px 0;
+}
 .news-feed .item {
 	display: inline-block;
 	vertical-align: top;
 	padding: 0 20px 24px 40px;
 	width: 408px;
 }
+.news-inner .date,
 .news-feed .date {
 	display: block;
 	font-size: 15px;
@@ -823,20 +826,34 @@ a:hover {
 	color: #66a137;
 	margin: 0 0 10px;
 }
+.news-inner .date {
+	font-size: 17px;
+}
+.news-inner .title,
 .news-feed .title {
 	text-transform: uppercase;
 	margin: 0 0 9px;
 }
+.news-inner .title {
+	margin: 0 0 12px;
+}
 .news-feed h2 {
 	font-size: 15px;
 }
+.news-inner h1 {
+	font-size: 17px;
+	font-weight: bold;
+}
+.news-inner .title a,
 .news-feed .title a {
 	color: #000;
 	text-decoration: none;
 }
+.news-inner .title a:hover,
 .news-feed .title a:hover {
 	text-decoration: underline;
 }
+.news-inner .entry,
 .news-feed .entry {
 	font-size: 13px;
 	line-height: 19px;
@@ -844,12 +861,19 @@ a:hover {
 	position: relative;
 	padding: 0 0 35px;
 }
-.news-feed .more {
+.news-inner .entry {
+	font-size: 14px;
+	line-height: 20px;
+}
+.news-feed .button {
 	position: absolute;
 	bottom: 0;
 }
 .news-feed p {
 	margin: 0 0 10px;
+}
+.news-inner p {
+	margin: 0 0 18px;
 }
 /* footer */
 #footer {
