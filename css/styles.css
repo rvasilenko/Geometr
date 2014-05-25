@@ -35,7 +35,8 @@ a:hover {
 .news .columns:after,
 #footer .holder:after,
 .dilers:after,
-.tabset:after {
+.tabset:after,
+.partner:after {
     display: block;
     content: '';
     clear: both;
@@ -654,6 +655,74 @@ a:hover {
 }
 .partners .entry {
 	padding-bottom: 28px;
+}
+/* partner */
+.partner .aside {
+	float: left;
+	width: 296px;
+	padding: 18px 12px;
+}
+.partner .aside .photo {
+	text-align: center;
+	position: relative;
+	padding: 0 0 28px;
+}
+.partner .aside .photo:after {
+	content: '';
+	position: absolute;
+	left: -12px;
+	bottom: 0;
+	width: 320px;
+	height: 27px;
+	background: url(../images/bg-bottom-shadow4.png) no-repeat;
+}
+.partner .aside .photo img {
+	vertical-align: top;
+}
+.partner .link {
+	text-align: center;
+	font-size: 15px;
+	position: relative;
+	padding: 6px 0 24px;
+}
+.partner .link:after {
+	content: '';
+	position: absolute;
+	left: -12px;
+	bottom: -10px;
+	width: 320px;
+	height: 27px;
+	background: url(../images/bg-top-shadow4.png) no-repeat;
+}
+.partner .link a {
+	color: #a4a4a4;
+	text-decoration: none;
+}
+.partner .link a:hover {
+	text-decoration: underline;
+}
+.partner .aside .button-holder {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.partner .aside .button-holder a {
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 7px;
+}
+.partner .aside .button-holder a:hover {
+	text-decoration: underline;
+}
+.partner .text {
+	overflow: hidden;
+	padding: 9px 20px 9px 10px;
+	font-size: 14px;
+	line-height: 19px;
+}
+.partner .text p {
+	margin: 0 0 11px;
 }
 /* product */
 .product {
