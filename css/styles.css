@@ -641,6 +641,20 @@ a:hover {
 .catalog-wide .button {
 	font-size: 14px;
 }
+/* partners */
+.partners {
+	padding-top: 20px;
+}
+.partners .item {
+	margin-bottom: 32px;
+}
+.partners .photo {
+	padding: 0 0 24px;
+	margin: 0 0 10px;
+}
+.partners .entry {
+	padding-bottom: 28px;
+}
 /* product */
 .product {
     padding: 2px 0 0 9px;
